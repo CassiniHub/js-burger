@@ -25,6 +25,29 @@ function(){
          }
       }
 
+      var coupons = [
+         "A7FH479DHD0",
+         "DJ28RJ58F28",
+         "K0L1937HF9J"
+      ];
+
+      var getBurgerCoupon = document.getElementById('burger-coupon');
+      var burgerCoupon    = getBurgerCoupon.value;
+      var sale            = finalPrice * 20 / 100;
+      var couponFinded    = false;
+
+      for (var i = 0; i < coupons.length && couponFinded == false; i++) {
+         
+         var coupon = coupons[i];
+
+         console.log(coupon);
+         if (coupon = burgerCoupon) {
+            
+            finalPrice -= sale;
+            couponFinded = true;
+         }
+      }
+      
       var spanPrice = document.getElementById('price');
       spanPrice.innerHTML = finalPrice;
 
