@@ -2,6 +2,22 @@ var getBurgerName = document.getElementById('burger-name');
 var getCalculate  = document.getElementById('calculate');
 
 
+var getLis = document.getElementsByTagName("li");
+for (var i = 0; i < getLis.length; i++) {
+   
+   var li = getLis[i];
+   
+   li.addEventListener("click",
+   function(){
+
+      var clickedLi         = this;
+      var clickedLiChildren = clickedLi.children;
+      var clickedCheckbox   = clickedLiChildren[1];
+
+      clickedCheckbox.checked = !clickedCheckbox.checked;
+   });
+   
+}
 
 
 getCalculate.addEventListener("click",
