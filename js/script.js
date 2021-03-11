@@ -1,7 +1,7 @@
 var getBurgerName = document.getElementById('burger-name');
 var getCalculate  = document.getElementById('calculate');
 
-
+// liCheck TOGGLE
 var getLis = document.getElementsByTagName("li");
 for (var i = 0; i < getLis.length; i++) {
    
@@ -19,7 +19,7 @@ for (var i = 0; i < getLis.length; i++) {
    
 }
 
-
+//price calculation
 getCalculate.addEventListener("click",
 function(){
 
@@ -72,4 +72,4 @@ function(){
 
       alert('Inserisci un nome');
    }
-})
+});
