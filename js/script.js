@@ -2,6 +2,8 @@ var getBurgerName = document.getElementById('burger-name');
 var getCalculate  = document.getElementById('calculate');
 
 
+
+
 getCalculate.addEventListener("click",
 function(){
 
@@ -40,7 +42,6 @@ function(){
          
          var coupon = coupons[i];
 
-         console.log(coupon);
          if (coupon = burgerCoupon) {
             
             finalPrice -= sale;
